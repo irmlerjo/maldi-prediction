@@ -27,6 +27,7 @@ BINNING_18K_RAW = 'RAW'
 DATASET_DRIAMSA ='DRIAMS_A'
 DATASET_DRIAMSB ='DRIAMS_B'
 DATASET_ALL ='DRIAMS_ABCD'
+DATASET_SPECIES_COMBINED ='DRIAMS_A_ALL_SPECIES'
 
 # Random State for algorithms that have some randomness to make it reproducable use it
 RANDOM_STATE=42
@@ -37,35 +38,6 @@ METHOD_DUMMY = 'dummy'
 METHOD_LR = 'logreg'
 METHOD_MLP = 'mlp'
 METHOD_CNN = 'cnn'
-METHOD_CNN_TWO = 'cnn_two'
-
-# Deep Learning Hyperparameters
-# MLP
-MLP_KERNEL_LAYER1='kernel_layer1'
-MLP_KERNEL_LAYER2='kernel_layer2'
-MLP_DROPOUT_LAYER1='dropout_layer1'
-MLP_DROPOUT_LAYER2='dropout_layer2'
-MLP_DROPOUT_LAYER3='dropout_layer3'
-
-# CNN
-CNN_KERNEL_SIZE= 'kernel_size'
-CNN_STRIDE= 'stride'
-CNN_OUT_CHANNELS= 'out_channels'
-CNN_DROPOUT_CNN= 'dropout_cnn'
-CNN_DROPOUT_DENSE= 'dropout_dense'
-CNN_PADDING= 'padding'
-
-# CNN TWO
-CNN2_OUT_CHANNELS_1 ='cnn_out_channels_1'
-CNN2_OUT_CHANNELS_2 ='cnn_out_channels_2'
-CNN2_KERNEL_SIZE_1 = 'kernel_size_1'
-CNN2_KERNEL_SIZE_2 = 'kernel_size_2'
-CNN2_PADDING_1 = 'padding1'
-CNN2_PADDING_2 = 'padding2'
-CNN2_STRIDE_1 = 'stride1'
-CNN2_STRIDE_2 = 'stride2'
-CNN2_DROPOUT_1 = 'dropout_cnn_1'
-CNN2_DROPOUT_2 = 'dropout_cnn_2'
 
 IN_FEATURES = 'in_features'
 LEARNING_RATE='learning_rate'
@@ -108,9 +80,8 @@ PARAM_GRID_DUMMY = {
     'strategy': ['uniform','stratified','prior','most_frequent']
 }
 
-
 ################## DEEP LEARNING CONSTS #####################
-OUTPUT_DIM = 1 # TODO: Execute
+OUTPUT_DIM = 1 
 
 
 
